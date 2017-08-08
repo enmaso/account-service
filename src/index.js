@@ -49,10 +49,6 @@ mongoose.connect(mongoUri, mongoOpts)
 // Service routes
 app.use('/account', routes)
 
-app.get('/favicon.ico', (req, res, next) => {
-  next()
-})
-
 // If Route not found, 404
 app.all('*', (req, res) => {
   res.status(404).json({
@@ -62,7 +58,7 @@ app.all('*', (req, res) => {
 
 // Run service
 app.listen(PORT, () => {
-  logger.debug(`[${process.env.NODE_ENV}] Auth-Service ready on port ${PORT}`)
+  logger.debug(`[${process.env.NODE_ENV}] Account-Service ready on port ${PORT}`)
 })
 
 export default app
