@@ -1,5 +1,5 @@
 {
-  "name": "account-service",
+  "name": "identity-service",
   "version": "1.1.0",
   "description": "Account Creation & Authentication Service",
   "main": "index.js",
