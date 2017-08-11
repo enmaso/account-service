@@ -1,1 +1,1 @@
-# account-service
+# identity-service
